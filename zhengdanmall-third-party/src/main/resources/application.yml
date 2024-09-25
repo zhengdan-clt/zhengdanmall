@@ -1,0 +1,22 @@
+server:
+  port: 30000
+
+spring:
+  application:
+    name: zhengdanmall-third-party
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    #暂时先配在本地，上线后才配在nacos
+    alicloud:
+      access-key: LTAI5tBgeZQpNb5dSWaE8kPH
+      secret-key: qLTHirqTAQkXcRL7irQP8TewCfMEyU
+      oss:
+        endpoint: oss-cn-shenzhen.aliyuncs.com
+        bucket: zhengdanmall-hello
+
+logging:
+  level:
+    io.niceseason.gulimall.product: debug
+

@@ -15,5 +15,7 @@
         <module>zhengdanmall-order</module>
         <module>zhengdanmall-product</module>
         <module>zhengdanmall-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
     </modules>
 </project>

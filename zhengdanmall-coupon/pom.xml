@@ -18,9 +18,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.1.8.RELEASE</spring-boot.version>
-        <spring-cloud.version>2021.0.5</spring-cloud.version>
+        <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.ufo.zhengdanmall</groupId>
+            <artifactId>zhengdanmall-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -73,7 +78,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.ufo.zhengdanmall.coupon.ZhengdanmallCouponApplication</mainClass>
+                    <mainClass>com.ufo.zhengdanmall.ZhengdanmallCouponApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>
